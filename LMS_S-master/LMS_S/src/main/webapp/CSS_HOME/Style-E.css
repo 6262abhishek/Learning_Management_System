@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --primary-color: #000839;
+    --primary-shades: #00020b;
+    --para-color: #9596a1;
+    --helper-color: #1264fa;
+    --white: rgb(255, 255, 255);
+    --bg-color: #f1f1f5;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+
+}
+
+/* Creating Course Buttom */
+.containerC {
+    text-decoration: none;
+    border: none;
+    outline: none;
+     text-transform: capitalize;
+    transition: all 2s linear;
+     max-width: 120rem;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: block; 
+}
+
+.heading {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.heading h1 {
+    font-size: 3rem;
+}
+
+.creating-btn {
+    border: none;
+    
+}
+button#C-btn.creating-btn:hover {
+   border: none;
+}
+
+/* box Section */
+.box-container {
+    display: flex;
+    text-align: center;
+    /* width: ; */
+}
+.box {
+    border: 1px solid var(--primary-shades);
+    background-color: var(--white);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 10px var(--primary-shades);
+
+}
+.image{
+    box-shadow: 0 5px 10px var(--primary-shades);
+    border-radius: 0.5rem;
+}
+.image img {
+    border-radius: 0.5rem;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.content {
+    margin: 2rem 1rem;
+}
+.content h3 {
+    font-size: 4rem;
+}
+.content p {
+    font-size: 1.5rem;
+}
+.btnC{
+    font-size: 2rem;
+}
+
+/* Section Guide */
+.section {
+    padding: 6rem 0;
+ }
+ 
+ .containerA {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+ }
+ 
+ .grid {
+    display: grid;
+    gap: 9.6rem;
+ }
+ 
+ .grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+ }
+ 
+/* hero section */
+.section-hero {
+    position: relative;
+ }
+ 
+ .section-hero::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 9.6rem;
+    right: 0;
+    width: 30%;
+    height: 50%;
+    background-color: var(--bg-color);
+    z-index: -1;
+ }
+ 
+ .primary-heading {
+    font-size: 5rem;
+    font-weight: 700;
+ 
+ }
+ 
+ .section .para {
+    margin-top: 2rem;
+    margin-bottom: 3.2rem;
+ }
+ 
+ 
+ 
+ .hero-imageG {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+ }
+ 
+ .hero-image img {
+    height: 90%;
+    width: 100%;
+ }
+/* Footer */
+footer{
+    padding: 3rem;
+    margin-bottom: 0;
+}
+h5.text-light{
+    font-size: 2rem;
+}
+li .text-muted{
+    font-size: 1.3rem;
+}
+small.d-block.mb-3.p-5.text-muted{
+    font-size: 1.7rem;
+}

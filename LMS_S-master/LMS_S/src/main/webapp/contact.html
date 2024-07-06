@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6, span, p {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        body {
+            background-color: #E9ECEF;
+        }
+
+        #load {
+            transition: 2s;
+            margin-top: 5px;
+            margin-bottom: 1px;
+            position: absolute;
+            left: 110px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: grey solid 5px;
+            display: none;
+            outline: none;
+            border-top: lightskyblue 5px solid;
+            animation: loading infinite 0.6s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes loading {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .contact {
+            margin-bottom: 30px;
+            /* position: relative; */
+            min-height: auto;
+            padding-top: 40px;
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url();
+            background-size: cover;
+        }
+
+        .contact .content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .contact .content h2,
+        .contact .contact h1 {
+            font-size: 36px;
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+        }
+
+        .contact .content p {
+            font-weight: 300;
+            color: rgb(0, 0, 0);
+        }
+
+        .containor {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .containor .contactinfo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .containor .contactinfo .box {
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+
+        .containor .contactinfo .box {
+            min-width: 60px;
+            height: 60px;
+        }
+
+        .containor .contactinfo .box .text {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            flex-direction: column;
+            font-weight: 300;
+        }
+
+        .box {
+            display: block;
+        }
+
+        .containor .contactinfo .box .text h3 {
+            font-weight: 500;
+            color: #00bcd4;
+        }
+
+        .contactForm {
+            width: 50%;
+            padding: 70px;
+            background: #fff;
+        }
+
+
+        .contactForm h2 {
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .contactForm .inputBox {
+            position: relative;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+
+        .contactForm .inputBox span[class=span] {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        .contactForm .inputBox input:focus~span,
+        .contactForm .inputBox input:valid~span,
+        .contactForm .inputBox textarea:focus~span,
+        .contactForm .inputBox textarea:valid~span {
+
+            color: #000000;
+            font-size: 12px;
+            transform: translateY(-20px)
+        }
+
+        .contact p,
+        .contact h2,
+        .contact h3 {
+            z-index: -2;
+        }
+
+
+        .contactForm .inputBox button[type="submit"] {
+            opacity: 0.6;
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+            transition: all ease 0.5s;
+        }
+
+        .contactForm .inputBox button[type="submit"]:hover {
+            transition: 0.3s;
+            opacity: 1;
+        }
+
+
+
+        @media (max-width: 800px) {
+            .contact {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .containor {
+                flex-direction: column;
+            }
+
+            .containor .contactinfo {
+                margin-bottom: 40px;
+            }
+
+            .containor .contactinfo {
+                padding-left: 10px;
+                width: auto;
+            }
+
+            .contactForm {
+                /* padding-left: 50px; */
+                width: auto;
+            }
+        }
+
+        @media (max-width: 352px) {
+            .containor .contactinfo .box {
+                display: none;
+            }
+        }
+
+        @media (min-width: 353px) {
+            .containor .contactinfo .box {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contact_us starts-->
+    <section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <div class="h3">
+                <h2 style="font-weight: 100; padding-top: 20px;">Want to Become a Teacher</h2>
+            </div>
+        </div>
+        <div class="containor">
+            <div class="contactForm">
+                <form action="javascript:sendemail()" method="POST" id="form">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="Name" id="Name" required="required" autocomplete="off" placeholder="Full Name">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="Email" id="Email" required="required" autocomplete="off" placeholder="Email ID">
+                    </div>
+                    <div class="inputBox">
+                        <textarea type="text" required="required" name="message" id="message" autocomplete="off" 
+                        placeholder="Type your Message and also attach your id links here"></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <button type="submit" value="Submit" class="button">
+                            submit
+                        </button>
+                        <span id="load"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- contact us ends -->
+
+    <!-- script starts -->
+
+    <!--this is essential to link this smtp and jquery cdn link-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--this is essential to link this smtp and jquery cdn link-->
+
+    <script>
+        function sendemail() {
+            var name = $('#Name').val();
+            var email = $('#Email').val();
+            var message = $('#message').val();
+    
+            var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Message: ' + message;
+            Email.send({
+                SecureToken: "102d6e0-8c7c-42f7-aa2b-23bcfa26ef6e",
+                To: 'nishantsharma2023@gmail.com',
+                From: "projecttraining8@gmail.com",
+                Subject: "Teacher Enquiry ",
+                Body : Body
+            }).then(
+                message => {
+                    //console.log (message);
+                    if (message == 'OK') {
+                        window.location.replace("thankyou.html")
+                    }
+                    else {
+                        console.error(message);
+                        window.location.replace("error.html")
+                    }
+                }
+            );
+        }
+    </script>
+
+    <script>
+        document.getElementById("form").onsubmit = function () {
+            document.getElementById('load').style.display = "inline"
+        }
+    </script>
+    <!--script ends-->
+</body>
+
+</html>`

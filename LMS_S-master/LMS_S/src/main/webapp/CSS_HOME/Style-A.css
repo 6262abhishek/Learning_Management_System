@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --primary-color: #000839;
+    --primary-shades: #00020b;
+    --para-color: #9596a1;
+    --helper-color: #1264fa;
+    --subheading-color:#0d46af;
+    --white: rgb(255, 255, 255);
+    --bg-color: #f1f1f5;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+
+}
+
+/* navbar */
+.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-light {
+    gap: 3.2rem;
+
+    background-color: var(--bg-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.396);
+}
+
+.navbar-brand.text-primary b {
+    font-size: 2rem;
+}
+
+.navbar-nav.mr-auto {
+    gap: 3.2rem;
+}
+
+.nav-link.text-primary {
+    font-size: 1.7rem;
+}
+
+.dropdown-menu{
+    font-size: 1.4rem; 
+    border-radius: 1rem;
+    background-color: #e2e2e4;
+}
+
+
+/* Section Guide */
+.container{
+    margin: 8rem auto;  
+}
+section.guidebook{
+    padding-bottom: 3rem;
+    margin-bottom: 5rem;
+}
+.heading h2{
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin:2rem 0;
+    color: var(--primary-color);
+}
+.body-box{
+    border: 2px solid var(--primary-shades);
+    height: 35rem;
+    display: block;
+    overflow-y: scroll;
+    padding: 4rem 6rem;
+    position:relative;
+    background-color: var(--white);
+    box-shadow: 0 5px 10px var(--primary-shades);
+}
+.secondary-heading{
+    font-size: 3rem;
+    font-weight:bold;
+    color: var(--subheading-color);
+}
+.para{
+    font-size: 1.5rem;
+    font-family: 'Inconsolata', monospace;
+    color: #777777;
+}
+.list li{
+    font-size: 1.5rem;
+    font-family: 'Inconsolata', monospace;
+    color: var(--para-color);
+}
+ span{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #01af2a;
+}
+
+/* Registation Section */
+.section {
+    padding: 3rem 0;
+    margin: 5rem auto;
+ }
+ 
+ .containerR {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+ }
+ 
+ .grid {
+    display: grid;
+    gap: 6rem;
+ }
+ 
+ .grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+ }
+ 
+.btnR {
+    padding: 1.6rem 3.2rem;
+    border-radius: 4rem;
+    background-color: var(--primary-shades);
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: all 0.5s linear;
+ }
+ 
+ .btnR:hover,
+ .btnR:active {
+    background-color: var(--white);
+    color: var(--helper-color);
+    transform: scale(1.06);
+    text-decoration: none;
+    border-color:var(--helper-color);
+ }
+/* hero section */
+.section-hero {
+    position: relative;
+ }
+ 
+ .section-hero::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 9.6rem;
+    right: 0;
+    width: 30%;
+    height: 50%;
+    background-color: var(--bg-color);
+    z-index: -1;
+ }
+ 
+ .primary-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+ 
+ }
+ 
+ .section .paraR {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    color: #777777;
+ }
+ 
+ 
+ .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+ }
+ 
+ .hero-image img {
+    height: 90%;
+    width: 100%;
+ }
+
+/* Teachers review */
+h3.mb-5{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--subheading-color);
+}
+ p.card-text.mb-auto{
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    color: #777777;
+ }
+/* Footer */
+footer {
+    padding: 3rem;
+    margin-bottom: 0;
+}
+
+h5.text-light {
+    font-size: 2rem;
+}
+
+li .text-muted {
+    font-size: 1.3rem;
+}
+
+small.d-block.mb-3.p-5.text-muted {
+    font-size: 1.7rem;
+}
+/* Resposiveness */
+/* Registation */
+@media(max-width:1200px) {
+    .containerR {
+       max-width: 96rem;
+ 
+    }
+ 
+    .section-hero .grid-two-column {
+       grid-template-columns: 1fr;
+    }
+ 
+    .section-hero .hero-icons .grid-two-column {
+       grid-template-columns: 1fr 1fr;
+    }
+}
+.section::before{
+    height: 30vh;
+    
+ }
+ .hero-image img{
+    width: 80%;
+ }
+ 
+ @media (max-width: 768px) {
+    .containerR {
+      max-width: 720px;
+    }
+    .hero-image img {
+      width: 80%;
+    }
+    .hero-image{
+      width: 90%;
+      left: 0;
+    }
+    .section::before{
+       height: 20vh;
+       
+    }
+ }
+ @media(max-width:460px){
+    section.guidebook{
+        padding: 5rem 0;
+        margin: 7rem auto;
+    }
+ }

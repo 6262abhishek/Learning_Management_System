@@ -1,0 +1,56 @@
+@charset "ISO-8859-1";
+body {
+  font-family: Muli, sans-serif;
+  font-size: 16px;
+  
+}
+.navbar{
+	display: block;
+	background: #0066cc;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #fff;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+}
+.insert{
+	display: block;
+	background: #0066cc;
+	padding: 10px;
+	border-radius: 10px;
+	width: 150px;
+	height: 30px;
+}
+.insert-uid{
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+.data-required{
+	background-color: #0066cc;
+	border-radius: 30px;
+	font-weight: bold;
+}
+.all-data{
+	background-color: #fff;
+	font-weight: bold;
+}
+.button{
+	background: #80ffd4;
+	border-radius: 30px;
+	border-color: #0066cc;
+	font-weight: bold;
+	color: #0066cc;
+}
+form{
+	background: #FBF7F5;
+	border-radius: 30px;
+	width:400px;
+}
+.input{
+	border-radius: 30px;
+	font-weight: bold;
+	border-color: #FBF7F5;
+}
